@@ -2,7 +2,7 @@ from discord.ext import commands
 import time
 import discord
 
-class errors(commands.Cog):
+class Cooldown(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
@@ -29,4 +29,4 @@ class errors(commands.Cog):
             self.last_cooldown_embed = current_time
 
 async def setup(bot):
-    await bot.add_cog(errors(bot))
+    await bot.add_cog(Cooldown(bot))

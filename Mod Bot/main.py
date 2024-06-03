@@ -27,7 +27,8 @@ cogs_list = [
     'cogs.events.cooldown',
     'cogs.moderator.ban',
     'cogs.moderator.kick',
-    'cogs.moderator.rename'
+    'cogs.moderator.rename',
+    'cogs.events.cooldown'
 ]
 
 async def load_cogs():
@@ -43,6 +44,8 @@ async def on_ready():
     print(f'Online vào bot {bot.user}')
     await load_cogs()
 
+# SyncSlash. Mỗi lần chỉnh sửa lệnh nên syncslash lại 1 lần :D
+# ?syncslash 
 @bot.command()
 @commands.is_owner()
 async def syncslash(ctx: commands.Context, guilds: commands.Greedy[discord.Object], spec: Optional[Literal["~", "*", "^"]] = None) -> None:
