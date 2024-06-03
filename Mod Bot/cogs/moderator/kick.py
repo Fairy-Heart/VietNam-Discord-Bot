@@ -17,7 +17,7 @@ class Kick(commands.Cog):
         reason = 'Lí do kick(nếu có)',
     )
     @app_commands.default_permissions(kick_members = True)
-    @app_commands.cooldown(1, 10, commands.BucketType.user)
+    @commands.cooldown(1, 10, commands.BucketType.user)
     async def kick(
         self,
         interaction: discord.Interaction,

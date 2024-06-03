@@ -28,6 +28,7 @@ cogs_list = [
     'cogs.moderator.ban',
     'cogs.moderator.kick',
     'cogs.moderator.rename',
+    'cogs.moderator.clear'
 ]
 
 async def load_cogs():

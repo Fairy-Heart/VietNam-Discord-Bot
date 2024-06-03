@@ -18,7 +18,7 @@ class Ban(commands.Cog):
         delete_day = 'Xóa tin nhắn trong bao nhiêu ngày, chọn 0 nếu không muốn xóa'
     )
     @app_commands.default_permissions(ban_members = True)
-    @app_commands.cooldown(1, 10, commands.BucketType.user)
+    @commands.cooldown(1, 10, commands.BucketType.user)
     async def ban(
         self,
         interaction: discord.Interaction,

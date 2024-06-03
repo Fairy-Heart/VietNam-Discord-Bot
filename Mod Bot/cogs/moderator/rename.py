@@ -17,7 +17,7 @@ class Rename(commands.Cog):
         new_name = 'Nickname mới bạn muốn đổi',
         reason = 'Lí do (nếu có)'
     )
-    @app_commands.cooldown(1, 10, commands.BucketType.user)
+    @commands.cooldown(1, 10, commands.BucketType.user)
     async def rename(
         self,
         interaction: discord.Interaction,
