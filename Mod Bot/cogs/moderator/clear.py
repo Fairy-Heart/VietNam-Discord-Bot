@@ -22,7 +22,7 @@ class Clear(commands.Cog):
     async def clear(
         self,
         interaction: discord.Interaction,
-        amount: app_commands.Range[int, 1, 100,],
+        amount: app_commands.Range[int, 2, 100,],
         reason: str = 'Không đề cập lí do'
     ):
         
