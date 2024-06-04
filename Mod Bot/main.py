@@ -11,7 +11,7 @@ with open(config_path) as config_file:
     Prefix = data['Prefix']
 
 
-intents = discord.Intents.default()
+intents = discord.Intents.all()
 intents.message_content = True
 
 
