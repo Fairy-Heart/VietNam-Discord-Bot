@@ -29,6 +29,7 @@ cogs_list = [
     'cogs.moderator.kick',
     'cogs.moderator.rename',
     'cogs.moderator.clear',
+    'cogs.moderator.lock',
     'cogs.security.lockdown'
 ]
 
@@ -36,7 +37,7 @@ async def load_cogs():
     for cogs in cogs_list:
         try:
             await bot.load_extension(cogs)
-            print('Load cogs thành công')
+            print(f'Load cogs {cogs} thành công')
         except Exception as error_on_load_cogs:
             print(f'Gặp lỗi khi load cogs ^^^{error_on_load_cogs}')
 
