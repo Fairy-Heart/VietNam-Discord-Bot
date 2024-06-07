@@ -30,8 +30,9 @@ cogs_list = [
     'cogs.moderator.rename',
     'cogs.moderator.clear',
     'cogs.moderator.lock',
+    'cogs.moderator.grant_role',
     'cogs.security.lockdown',
-    'cogs.security.ghost_ping'
+    'cogs.security.ghost_ping',
 ]
 
 async def load_cogs():
